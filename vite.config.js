@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import {copySrcFile, copySrcFolder} from "./buildUtils";
+import {copySrcFile, copySrcFolder, copyDistToWindowsAppdata} from "./buildUtils";
 
 function fileMarkerPlugin() {
     return {
@@ -35,6 +35,11 @@ function moduleCopyPlugin() {
                 copySrcFolder('src/templates');
                 copySrcFolder('src/styles');
                 copySrcFolder('src/lang');
+
+                // Uncomment the next line if you want Vite to 
+                // automatically copy the built module to your Foundry appdata directory.
+                
+                // copyDistToWindowsAppdata('module-name-here');
             }, 1000)
         }
     }

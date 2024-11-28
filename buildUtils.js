@@ -37,3 +37,11 @@ export function copySrcFile(name, newName = null) {
         }
     });
 }
+
+export function copyDistToWindowsAppdata(moduleName) {
+    const modulesPath = path.join(process.env.LOCALAPPDATA, `/FoundryVTT/Data/modules/${moduleName}`);
+    fs.ensureDirSync(modulesPath);
+    const srcDir = path.resolve(__dirname, 'dist');
+    fs.copySync(srcDir, modulesPath);
+    console.log('Module files copied to:', modulesPath);
+}
