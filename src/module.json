@@ -1,0 +1,23 @@
+{
+  "id": "module-name-here-wfrp4",
+  "title": "Module Name",
+  "version": "develop",
+  "compatibility": {
+    "minimum": "12",
+    "verified": "12"
+  },
+  "description": "This is a development version module for VTT Foundry",
+  "esmodules": [
+    "module-name-here.js"
+  ],
+  "styles": [
+    "styles/styles.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ]
+}
