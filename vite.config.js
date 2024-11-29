@@ -58,10 +58,7 @@ export default defineConfig({
             },
             output: {
                 entryFileNames: 'module-name-here.js'
-            },
-            external: [
-                "plugins/foundry.js"
-            ]
+            }
         },
         outDir: 'dist',
         emptyOutDir: false
