@@ -101,7 +101,7 @@ Once the release is published, the GitHub Actions workflow will automatically:
 │   └── init.ts             # Main entry point for your module
 ├── vite.config.js          # Vite config for development
 ├── vite.config.prod.js     # Vite config for production
-├── buildUtils.js           # Additional utils for build
+├── utils/build-utils.js    # Additional utils for build
 ├── package.json            # Project dependencies and scripts
 └── README.md               # This file
 ```

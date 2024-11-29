@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import {copySrcFile, copySrcFolder} from "./buildUtils";
+import {copySrcFile, copySrcFolder} from "./utils/build-utils";
 
 function moduleCopyPlugin() {
     return {

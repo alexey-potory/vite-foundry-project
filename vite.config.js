@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import {copySrcFile, copySrcFolder, copyDistToWindowsAppdata} from "./buildUtils";
+import {copySrcFile, copySrcFolder, copyDistToWindowsAppdata} from "./utils/build-utils";
 
 function fileMarkerPlugin() {
     return {
